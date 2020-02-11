@@ -5,12 +5,22 @@ enum color {
 	red,
 	green,
 	blue,
-	asd,
-	asdfasf=3000
+	asdf,
+	asdfgas=123123
+
 };  
 
-color bus=asdfasf;
+enum test {
+	asf=10,
+	erfg=230,
+
+} vid; 
+
+color bus=asdfgas;
 
 cout<<bus<<endl;
+
+vid=erfg;
+cout<<vid<<endl;
   return 0;
 }
