@@ -6,29 +6,26 @@ int main(){
    	
    class myClass {
    	public:
-   		int a;
-   		int b;
-   		int sum3;
-   		int sum(){
-   			return a+b;
-		   }
-		int sum2(){
-			int sum = a+b;
-   			return sum;
-		   }
-		void sw2(){
-			sum3 = a+b;
-			cout<<sum3<<endl;
-		}      
+   	int inner_col;
+   	int arr[];
+   	int mel(int s,int col){
+   		inner_col = col;
+   		for(int i=0;i<=col;i++){
+   			arr[i] = s;
+   			s++;
+		   } 
+   		
+	   } //mel
+	void sw3(){
+	   for(int j=0;j<inner_col;j++){
+   			cout<<arr[j]<<endl;
+   			
+		   }	
+	}   
    };
-   
-   myClass exam;
-   
-   exam.a = 2;
-   exam.b = 2;
-   
-   cout<<exam.sum()<<endl;
-   cout<<exam.sum()<<endl;
-   exam.sw2();
+   myClass obj;
+   obj.mel(2,7);
+   obj.sw3();
+
    return 0;  
 }
